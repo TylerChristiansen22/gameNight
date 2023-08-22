@@ -19,6 +19,10 @@ export class PlayersController {
         playersService.scorePoint(playerName)
         update()
     }
+    removePoint(playerName) {
+        playersService.removePoint(playerName)
+        update()
+    }
 }
 
 function update() {
